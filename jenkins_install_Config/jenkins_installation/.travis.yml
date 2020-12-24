@@ -1,29 +1,28 @@
 ---
+os: linux
+dist: bionic
+
 language: python
-python: "2.7"
+python:
+  - "3.8.0"
 
-# Use the new container infrastructure
-sudo: false
+services:
+  - docker
 
-# Install ansible
-addons:
-  apt:
-    packages:
-    - python-pip
+before_install:
+  - git clone https://github.com/lean-delivery/ansible-lint-rules.git ~/ansible-lint-rules
 
 install:
-  # Install ansible
-  - pip install ansible
-
-  # Check ansible version
+  - pip3 install --upgrade ansible==2.9.* docker molecule==2.22
+  - pip3 install git+https://github.com/ansible/ansible-lint.git
+  - git clone https://github.com/lean-delivery/ansible-molecule-drivers.git molecule/resources/provisioning
   - ansible --version
-
-  # Create ansible.cfg with correct roles_path
-  - printf '[defaults]\nroles_path=../' >ansible.cfg
+  - ansible-lint --version
 
 script:
-  # Basic role syntax check
-  - ansible-playbook tests/test.yml -i tests/inventory --syntax-check
+  - yamllint . -c .yamllint
+  - ansible-lint . -c .ansible-lint
+  - molecule test -s default
 
 notifications:
   webhooks: https://galaxy.ansible.com/api/v1/notifications/

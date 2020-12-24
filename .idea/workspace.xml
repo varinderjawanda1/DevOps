@@ -2,13 +2,95 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0cd4e555-4261-46a5-b53c-36664459f5fd" name="Default Changelist" comment="Added Jenkins configurations">
-      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/module_utils/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/moleculs/cloud-aws-direct/molecule.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/moleculs/cloud-aws-direct/playbook.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/moleculs/default/deockerfile.j2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/moleculs/default/molecule.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/moleculs/default/playbook.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/.ansible-lint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/.cookiecutter.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/.gitlab-ci.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/.yamllint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/ansible-role-jenkins" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/moleculs/resources/prepare.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/moleculs/resources/test/verify.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/requirements.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/tasks/add_new_jobs.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/tasks/configure/Debian.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/tasks/configure/RedHat.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/tasks/configure/not-supported.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/tasks/configure_bitbucket_project.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/tasks/configure_ec2.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/tasks/configure_github.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/tasks/configure_gitlab.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/tasks/configure_globaltools.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/tasks/configure_jira.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/tasks/configure_pipeline_libraries.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/tasks/configure_security.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/tasks/configure_smtp.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/tasks/configure_sonarqube.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/tasks/configure_ssh_keys.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/tasks/copy_custom_files.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/tasks/globaltools/ant.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/tasks/globaltools/docker.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/tasks/globaltools/gradle.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/tasks/globaltools/jdk.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/tasks/globaltools/maven.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/tasks/globaltools/nodejs.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/tasks/globaltools/sonarscanner.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/tasks/globaltools/sonarscannermsbuild.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/tasks/install_plugins.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/tasks/repository_install/Debian.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/tasks/repository_install/RedHat.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/tasks/repository_install/not-supported.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/tasks/selinux-support.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/tasks/set_credentials.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/tasks/ssl/Linux.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/tasks/ssl/Linux_keystore.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/tasks/system/Debian.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/tasks/system/RedHat.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/tasks/system/not-supported.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/templates/Debian_configuration.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/templates/RedHat_configuration.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/templates/add-smtp.groovy.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/templates/add-ssh-key.groovy.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/templates/check-smtp.groovy.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/templates/configure-bitbucket-project.groovy.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/templates/configure-jira.groovy.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/templates/configure-pipeline-libraries.groovy.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/templates/configure-security.groovy.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/templates/configure_sonarqube.groovy.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/templates/disable_unlock.groovy.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/templates/dsl_hybris_create_job.groovy.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/templates/globaltools/ant.groovy.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/templates/globaltools/docker.groovy.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/templates/globaltools/gradle.groovy.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/templates/globaltools/jdk.groovy.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/templates/globaltools/maven.groovy.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/templates/globaltools/nodejs.groovy.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/templates/globaltools/sonarscanner.groovy.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/templates/globaltools/sonarscannermsbuild.groovy.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/templates/proxy_configuration.groovy.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/templates/reset_user_password.groovy.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/templates/run_seed_job.groovy.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/templates/seedJob.xml.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/templates/set-credentials.groovy.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/templates/set-ec2_configuration.groovy.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/templates/set-github-connection.groovy.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/templates/set-gitlab-connection.groovy.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/templates/update_center_refresh.groovy.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/vars/Amazon.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/vars/Debian.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/vars/RedHat.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/ansible-role-jenkins/.ansible-lint" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/ansible-role-jenkins/.cookiecutter.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/ansible-role-jenkins/.gitlab-ci.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/ansible-role-jenkins/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/ansible-role-jenkins/.yamllint" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/ansible-role-jenkins/requirements.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/tasks/main.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/tests/inventory" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/tests/test.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/vars/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/jenkins_install_Config/jenkins_installation/vars/main.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,7 +101,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1m3wms9v35cDKof1bNkpaX5Gh7N" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -61,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608738073699</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added Jenkins configurations">
+      <created>1608827317056</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1608827317056</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
