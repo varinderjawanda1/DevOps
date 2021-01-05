@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: jenkins
+  namespace: cicd
+spec:
+  storageClassName: jenkins
+  accessModes:
+    - ReadWriteOnce
+  capacity:
+    storage: 10Gi
+  persistentVolumeReclaimPolicy: Retain
+  hostPath:
+    path: /data/jenkins-volume/

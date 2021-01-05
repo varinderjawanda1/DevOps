@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0cd4e555-4261-46a5-b53c-36664459f5fd" name="Default Changelist" comment="Jenkins service yaml for kubernetes">
+      <change afterPath="$PROJECT_DIR$/jenkins_install_kubernetes/cicd-namespace.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_install_kubernetes/volume.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jenkins_install_kubernetes/jenkins-install.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/jenkins_install_kubernetes/jenkins-install.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jenkins_install_kubernetes/jenkins-service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/jenkins_install_kubernetes/jenkins-service.yaml" afterDir="false" />
@@ -100,7 +102,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609847011474</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Jenkins service yaml for kubernetes">
+      <created>1609854258205</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1609854258205</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

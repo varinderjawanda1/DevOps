@@ -1,7 +1,9 @@
 apiVersion: apps/v1
 kind: Deployment
+apiVersion: extensions/v1beta1
+kind: Deployment
 metadata:
-  name: jenkins
+  name: jenkins-deployment
 spec:
   replicas: 1
   selector:
@@ -16,13 +18,10 @@ spec:
         - name: jenkins
           image: jenkins/jenkins:lts
           ports:
-            - name: http-port
-              containerPort: 8080
-            - name: jnlp-port
-              containerPort: 50000
-          volumeMounts:
-            - name: jenkins-vol
-              mountPath: /var/jenkins_vol
-      volumes:
-        - name: jenkins-vol
-          emptyDir: {}
+            - containerPort: 8080
+#volumeMounts:
+#      - name: jenkins-home
+#        mountPath: /data/jenkins-volume/
+#  volumes:
+#      - name: jenkins-home
+#        emptyDir: {}
